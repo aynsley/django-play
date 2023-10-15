@@ -6,3 +6,6 @@ class Project(models.Model):
     image = models.ImageField(upload_to='portfolio/images/')
     url = models.URLField(blank=True) # blank makes the field optional
 
+    def __str__(self):
+        # Determines what you see when blogs are listed in /admin
+        return self.title
