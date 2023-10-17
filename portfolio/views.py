@@ -7,3 +7,8 @@ def home(request):
     # Fetch all the Projects from the db, that is, all the objects of Python class Project
     proj_objs = Project.objects.all()
     return render(request, 'portfolio/home.html', {'projects': proj_objs})
+
+def big(request):
+    # Fetch all the Projects from the db, that is, all the objects of Python class Project
+    proj_objs = Project.objects.all()
+    return render(request, 'portfolio/big.html', {'projects': proj_objs})

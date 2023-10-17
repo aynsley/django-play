@@ -26,6 +26,7 @@ from portfolio import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    path('big/', views.big, name='big'),
     path('blog/', include('blog.urls'), name='all_blogs'),  # Forward any urls starting with blog/ to the blog app
 ]
 
